@@ -123,8 +123,8 @@ function chainPromises(promiseArray, action) {
           }
         });
     });
-  }).catch((error) => {
-    console.error('Processing promise array failed with error:', error);
+  }).catch(() => {
+    // some error here
   });
 }
 
