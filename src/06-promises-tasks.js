@@ -124,7 +124,7 @@ function chainPromises(promiseArray, action) {
         });
     });
   }).catch((error) => {
-    console.log('Processing promise array failed with error:', error);
+    console.error('Processing promise array failed with error:', error);
   });
 }
 
